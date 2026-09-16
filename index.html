@@ -1,4 +1,3 @@
-<!-- cat page -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +13,7 @@
     #cat-container {
       position: fixed;
       bottom: 40px;
-      right: -250px;
+      left: -250px;
       animation: runAcross 6s linear infinite;
     }
 
@@ -31,27 +30,24 @@
 
     #cat {
       font-size: 70px;
-      transform: scaleX(-1);
     }
 
     @keyframes runAcross {
       from {
-        right: -250px;
+        left: -250px;
       }
 
       to {
-        right: 110%;
+        left: 110%;
       }
     }
   </style>
 </head>
 
 <body>
-
   <div id="cat-container">
     <div id="bubble">Meow meow meow</div>
     <div id="cat">🐈</div>
   </div>
-
 </body>
 </html>
