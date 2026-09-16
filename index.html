@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cat</title>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: white;
+    }
+
+    #cat-container {
+      position: fixed;
+      bottom: 40px;
+      left: -250px;
+      animation: runAcross 6s linear forwards;
+    }
+
+    #bubble {
+      background: white;
+      border: 2px solid black;
+      border-radius: 15px;
+      padding: 10px 15px;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      margin-bottom: 5px;
+      white-space: nowrap;
+    }
+
+    #cat {
+      font-size: 70px;
+    }
+
+    @keyframes runAcross {
+      from {
+        left: -250px;
+      }
+
+      to {
+        left: 110%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="cat-container">
+    <div id="bubble">Meow meow meow</div>
+    <div id="cat">🐈</div>
+  </div>
+
+</body>
+</html>
